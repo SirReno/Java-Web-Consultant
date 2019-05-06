@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.innoventsolutions.birt.runtime:org.apache.commons.codec_1.9.0.v20170208-1614:4.8.0" type="repository">
+    <properties maven-id="com.innoventsolutions.birt.runtime:org.apache.commons.codec_1.9.0.v20170208-1614:4.8.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.apache.commons.codec_1.9.0.v20170208-1614-4.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/org.apache.commons.codec_1.9.0.v20170208-1614-4.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
