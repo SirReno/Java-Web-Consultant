@@ -28,7 +28,7 @@ public class Worker extends Thread {
             if(task_data.length==1){
                 URL url = new URL(task_data[0]);
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-
+                connection.setRequestMethod("GET");
                 connection.connect();
 
                 int code = connection.getResponseCode();
@@ -36,23 +36,27 @@ public class Worker extends Thread {
                 String status = Integer.toString(connection.getResponseCode());
                 task_given.updateTask(worker_name,result,status);
             }else{
-                URL url =new URL(task_data[0]);
-                HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                try {
+                    URL url = new URL(task_data[0]);
+                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                    connection.setRequestMethod(task_data[1]);
+                    for (int i = 2; i < task_data.length; i++) {
+                        String[] property = task_data[i].split(":");
+                        connection.setRequestProperty(property[0], property[1]);
+                    }
 
-                for(int i=1;i<task_data.length;i++){
-                    String[] property= task_data[i].split(":");
-                    connection.setRequestProperty(property[0], property[1]);
+                    BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                    String inputLine;
+                    while ((inputLine = in.readLine()) != null)
+                        result += inputLine;
+                    in.close();
+                    int code = connection.getResponseCode();
+                    System.out.println(code);
+                    String status = Integer.toString(connection.getResponseCode());
+                    task_given.updateTask(worker_name, result, status);
+                }catch (Exception e){
+                    System.out.println("error in mienvio");
                 }
-
-                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                String inputLine;
-                while ((inputLine = in.readLine()) != null)
-                    result+=inputLine;
-                in.close();
-                int code = connection.getResponseCode();
-                System.out.println(code);
-                String status = Integer.toString(connection.getResponseCode());
-                task_given.updateTask(worker_name,result,status);
             }
     }
 

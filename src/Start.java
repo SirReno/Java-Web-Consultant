@@ -16,11 +16,11 @@ public class Start {
             threads[i].start();
         }
         while(true){
+            Thread.sleep(5000);
             if(tasks.hasFinished()==true){
                 tasks.final_statuses();
                 break;
             }else{
-                Thread.sleep(5000);
                 System.out.println("the Workers havent finished");
             }
         }
