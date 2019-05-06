@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 
@@ -16,17 +18,24 @@ public class Tasks {
     //easier use
     public void getUrlsFromFile(){
         try {
+            /*
             this.urls_from_file.add("http://www.google.com");
             this.urls_from_file.add("http://www.google.com.mx");
             this.urls_from_file.add("http://www.wikipedia.com");
             this.urls_from_file.add("https://sandbox.mienvio.mx/api/addresses;Content-Type:application/json;Authorization:Bearer ItPTCnqkFNlCLFabBBJvUOk2ModngFfdkJsgPVqnR5HcACR6L0thalVJGW2v;");
-            /*BufferedReader abc = new BufferedReader(new FileReader("urls.txt"));
+            */
+
+
+            BufferedReader abc = new BufferedReader(new FileReader("urls.txt"));
             String line;
             while((line = abc.readLine()) != null){
                 this.urls_from_file.add(line);
             }
-            abc.close();*/
-            this.urls=this.urls_from_file.toArray(new String[0]);
+
+            abc.close();
+
+            this.urls=new String[this.urls_from_file.size()];
+            this.urls=this.urls_from_file.toArray(this.urls);
             System.out.println("this is the amount of urls"+ this.urls.length);
         }catch(Exception e){
             System.out.println("Something went wrong on getURLS on Task.java");
@@ -34,7 +43,6 @@ public class Tasks {
     }
 
     public synchronized int getCounter(){
-        System.out.println("this.counter "+this.counter);
         return this.counter;
     }
     //getTask, gives the url that the thread calling this function will have
@@ -63,7 +71,6 @@ public class Tasks {
     //updateTask, will push the results of the consulted resource to
     //the urls_status array, for future consumption
     public synchronized void updateTask(String worker_name, String worker_task,String status){
-        System.out.println("worker name:"+worker_name+"; task done:"+worker_task+", gave status code "+status);
         this.urls_status.add("worker name:"+worker_name+"; task done:"+worker_task+", gave status code "+status);
     }
 

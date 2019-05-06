@@ -1,3 +1,4 @@
 https://www.google.com
 https://www.google.com.mx
-https://sandbox.mienvio.mx/api/addresses;Content-Type:application/json;Authorization:Bearer ItPTCnqkFNlCLFabBBJvUOk2ModngFfdkJsgPVqnR5HcACR6L0thalVJGW2v;
+https://sandbox.mienvio.mx/api/addresses;method:POST;Content-Type:application/json;Authorization:Bearer ItPTCnqkFNlCLFabBBJvUOk2ModngFfdkJsgPVqnR5HcACR6L0thalVJGW2v;
+https://sandbox.mienvio.mx/api/addresses;method:GET;Authorization:Bearer 7mEAVlemI5hGx3XckuPpRzpb3yczoOs4mm2bC6tPU9In8P0KYax55rIiYaJi
