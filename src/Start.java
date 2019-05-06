@@ -16,6 +16,7 @@ public class Start {
             threads[i].start();
         }
         while(true){
+            System.out.println("consulting, just wait a little");
             Thread.sleep(5000);
             if(tasks.hasFinished()==true){
                 tasks.final_statuses();

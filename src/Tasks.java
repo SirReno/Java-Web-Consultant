@@ -18,13 +18,6 @@ public class Tasks {
     //easier use
     public void getUrlsFromFile(){
         try {
-            /*
-            this.urls_from_file.add("http://www.google.com");
-            this.urls_from_file.add("http://www.google.com.mx");
-            this.urls_from_file.add("http://www.wikipedia.com");
-            this.urls_from_file.add("https://sandbox.mienvio.mx/api/addresses;Content-Type:application/json;Authorization:Bearer ItPTCnqkFNlCLFabBBJvUOk2ModngFfdkJsgPVqnR5HcACR6L0thalVJGW2v;");
-            */
-
 
             BufferedReader abc = new BufferedReader(new FileReader("urls.txt"));
             String line;
@@ -36,7 +29,6 @@ public class Tasks {
 
             this.urls=new String[this.urls_from_file.size()];
             this.urls=this.urls_from_file.toArray(this.urls);
-            System.out.println("this is the amount of urls"+ this.urls.length);
         }catch(Exception e){
             System.out.println("Something went wrong on getURLS on Task.java");
         }
@@ -71,7 +63,7 @@ public class Tasks {
     //updateTask, will push the results of the consulted resource to
     //the urls_status array, for future consumption
     public synchronized void updateTask(String worker_name, String worker_task,String status){
-        this.urls_status.add("worker name:"+worker_name+"; task done:"+worker_task+", gave status code "+status);
+        this.urls_status.add("worker name:"+worker_name+"; task done:"+worker_task+"; gave status code "+status);
     }
 
     //here we will check if the next value in the array list is null

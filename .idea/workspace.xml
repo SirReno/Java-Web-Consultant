@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba12918-bcae-448e-a5fe-655490e2a79c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto FInal/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto FInal/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto FInal/Tasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto FInal/Tasks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto FInal/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto FInal/Worker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/urls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/urls.txt" afterDir="false" />
     </list>
@@ -19,29 +23,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Worker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/urls.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="25" />
+            <state>
+              <caret lean-forward="true" selection-end-line="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#232#240#0" expanded="true" />
@@ -49,6 +46,18 @@
                 <element signature="e#1639#1640#0" expanded="true" />
                 <element signature="e#1974#1975#0" expanded="true" />
                 <element signature="e#2005#2006#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Worker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,13 +85,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Tasks.java" />
-        <option value="$PROJECT_DIR$/src/Worker.java" />
         <option value="$PROJECT_DIR$/src/Start.java" />
+        <option value="$PROJECT_DIR$/urls.txt" />
+        <option value="$PROJECT_DIR$/src/Worker.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -100,7 +110,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557112607789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557118162994" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Java-Web-Consultant" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -152,12 +162,12 @@
       <workItem from="1557009831122" duration="507000" />
       <workItem from="1557021067561" duration="2279000" />
       <workItem from="1557085370342" duration="8858000" />
-      <workItem from="1557102473695" duration="8880000" />
+      <workItem from="1557102473695" duration="12376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40332000" />
+    <option name="totallyTimeSpent" value="43828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -172,7 +182,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4171181" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4127844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -182,7 +192,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32932165" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.33044422" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -219,20 +229,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/urls.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tasks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="25" />
+        <state>
+          <caret lean-forward="true" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#232#240#0" expanded="true" />
@@ -244,10 +247,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Start.java">
+    <entry file="file://$PROJECT_DIR$/src/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="19" />
+          <caret lean-forward="true" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
         </state>
       </provider>
     </entry>

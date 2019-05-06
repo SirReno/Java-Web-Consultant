@@ -24,18 +24,18 @@ public class Worker extends Thread {
             String task= task_given.getTask(this.worker_name);
             task_given.increaseTask();
             String[] task_data =task.split(";");
-            String result="Url given "+task_data[0]+" Response(if API):";
+            String result;
             if(task_data.length==1){
+                result= "Url given "+task_data[0];
                 URL url = new URL(task_data[0]);
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.connect();
 
-                int code = connection.getResponseCode();
-                System.out.println(code);
                 String status = Integer.toString(connection.getResponseCode());
                 task_given.updateTask(worker_name,result,status);
             }else{
+                result= "Url given "+task_data[0]+" Response";
                 try {
                     URL url = new URL(task_data[0]);
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -50,8 +50,7 @@ public class Worker extends Thread {
                     while ((inputLine = in.readLine()) != null)
                         result += inputLine;
                     in.close();
-                    int code = connection.getResponseCode();
-                    System.out.println(code);
+
                     String status = Integer.toString(connection.getResponseCode());
                     task_given.updateTask(worker_name, result, status);
                 }catch (Exception e){
